@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Jufeng_Server"
+  id="myeclipse.1560742705754"
+  context-root="/Jufeng_Server"
+  j2ee-spec="6.0"
+  archive="Jufeng_Server.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

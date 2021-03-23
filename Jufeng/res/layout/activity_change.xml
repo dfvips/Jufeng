@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="cn.app.jufeng" >
+
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#1b1b1b"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="微软雅黑"
+            android:text="用户名"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="60sp"
+        android:layout_height="35sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:text="确定"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:text="取消"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
+
+	 <include
+	     android:id="@+id/changname"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_above="@+id/msg"
+	     android:layout_below="@+id/RelativeLayout2"
+	     android:layout_marginTop="10dp"
+	     layout="@layout/change_name"
+	     android:background="#FFFFFF"
+	     android:visibility="gone" />
+
+ 	 <include
+ 	     android:id="@+id/changpassword"
+ 	     android:layout_width="match_parent"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_above="@+id/msg"
+ 	     android:layout_below="@+id/RelativeLayout2"
+  	     android:layout_marginTop="10dp"
+ 	     layout="@layout/change_password"
+ 	     android:background="#FFFFFF"
+ 	     android:visibility="gone" />
+
+ 	 <include
+ 	     android:id="@+id/changemail"
+ 	     android:layout_width="match_parent"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_above="@+id/msg"
+ 	     android:layout_below="@+id/RelativeLayout2"
+ 	     layout="@layout/change_email"
+   	     android:layout_marginTop="10dp"
+ 	     android:background="#FFFFFF"
+ 	     android:visibility="gone" />
+
+  	 <include
+  	     android:id="@+id/changephone"
+  	     android:layout_width="match_parent"
+  	     android:layout_height="wrap_content"
+  	     android:layout_above="@+id/msg"
+  	     android:layout_below="@+id/RelativeLayout2"
+   	     android:layout_marginTop="10dp"
+  	     layout="@layout/change_phone"
+  	     android:background="#FFFFFF"
+  	     android:visibility="gone" />
+
+</RelativeLayout>

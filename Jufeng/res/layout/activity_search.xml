@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context="cn.itcast.jufeng.SearchActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1b1b1c"
+        >
+
+	<ImageView
+	    android:id="@+id/img_search_back"
+	    android:layout_width="23dp"
+	    android:layout_height="23dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="11dp"
+	    android:src="@drawable/backsmall" />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/textview18sp"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="0.96"
+            android:background="@drawable/edit_bg"
+            android:ems="10"
+            android:hint="搜索"
+            android:inputType="textNoSuggestions"
+            android:textColor="#FFFFFF" >
+
+            <requestFocus />
+
+        </EditText>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:divider="#00000000"
+        android:dividerHeight="10dp" 
+        android:background="#FFFFFF"
+        >
+
+    </ListView>
+
+</RelativeLayout>
